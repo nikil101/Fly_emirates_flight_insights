@@ -244,21 +244,11 @@ This project demonstrates how data analytics can:
 
 ### Dashboard 1 – Flight Performance Overview
 
-Insert Screenshot Here
-
-```markdown
-![Dashboard 1](images/dashboard1.png)
-```
+![Dashboard 1](https://raw.githubusercontent.com/nikil101/Fly_emirates_flight_insights/main/1.png)
 
 ### Dashboard 2 – Airport & Route Analysis
 
-Insert Screenshot Here
-
-```markdown
-![Dashboard 2](images/dashboard2.png)
-```
-
----
+![Dashboard 2](https://raw.githubusercontent.com/nikil101/Fly_emirates_flight_insights/main/2.png)
 
 ## Project Outcome
 
