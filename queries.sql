@@ -1,0 +1,44 @@
+use fly_emirates_flight;
+#1. Average Delay by Airline
+SELECT AIRLINE,
+ROUND(AVG(DEPARTURE_DELAY), 2) AS Avg_Departure_Delay
+FROM flights
+GROUP BY AIRLINE
+ORDER BY AVG(DEPARTURE_DELAY) DESC;
+
+#2 Flight Count by Airline
+SELECT
+AIRLINE,
+COUNT(*) AS Total_Flights
+FROM flights
+GROUP BY AIRLINE
+ORDER BY Total_Flights DESC;
+
+#3. Top 10 Most Delayed Airports
+SELECT
+ORIGIN_AIRPORT,
+ROUND(AVG(DEPARTURE_DELAY),2) AS Avg_Delay
+FROM flights
+GROUP BY ORIGIN_AIRPORT
+ORDER BY Avg_Delay DESC
+LIMIT 10;
+
+#4 Delay Trend by Day of Week
+SELECT
+DAY_OF_WEEK,
+ROUND(AVG(DEPARTURE_DELAY),2) AS Avg_Delay
+FROM flights
+GROUP BY DAY_OF_WEEK
+ORDER BY DAY_OF_WEEK;
+
+#5 Monthly Delay Trend
+SELECT
+MONTH,
+ROUND(AVG(DEPARTURE_DELAY),2) AS Avg_Delay
+FROM flights
+GROUP BY MONTH
+ORDER BY MONTH;
+
+
+
+
